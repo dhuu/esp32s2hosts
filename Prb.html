@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 10.1.1.1/Prb.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:10 GMT -->
+<head>
+<title>Prb 9.00 Exploit Menu Essentials</title>
+<style>
+body{background-color:#003399;color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.msgs{background-color:#062778;height:40px;border:2px solid #839ACA;font-size:28px;margin:0;padding:5px 0 5px 0;}
+.bottopmsg{display:block;position:absolute;bottom:0px;height:43px;width:1536px;font-size:26px;padding:5px 0 1px 0;}
+#backbutt:hover{cursor:pointer;background:linear-gradient(180deg,rgba(74,91,134,1)0%,rgba(4,9,23,1)35%);}
+</style>
+<script src="exploitV2.js"></script>
+</head>
+<body onload="goYesNo()">
+<div id=msgs class=msgs>Prb 9.00 Exploit Menu Essentials</div>
+<embed id=myembed1 name=page1 src="page2.html" frameborder="0" width="100%" height="647px" style="background-image:url('Prb/img/FlowBlueCrop.png');display:none"></embed>
+<div id=backbutt onclick=hideTrainer(); tabindex=1 class="msgs bottopmsg" style="display:none;outline:none;cursor:pointer;">Back To Exploit Menu</div>
+<div id=bottommsg class="msgs bottopmsg">Massive Thanks - Leeful - PS4Trainer - ChendoChap - theflow - Al Azif - SiSTRo - Sleirsgoevy - And Many More</div>
+<script>
+if(sessionStorage.loadWKPayload!=null){sessionStorage.blSERVER="no";}
+function defaultTXT(){msgs.innerHTML="Prb 9.00 Exploit Menu Essentials";}
+
+
+function swapPage(PageID){
+ myembed1.style.display="block";var Clone=myembed1.cloneNode(true);Clone.setAttribute('src',PageID);
+ myembed1.parentNode.replaceChild(Clone,myembed1);
+}
+
+
+function awaitpl(){
+ sessionStorage.removeItem('lastPL');msgs.innerHTML="BinLoader Ready! Send Payload To Port 9020";
+}
+
+function goYesNo(){
+ if (localStorage.ps4trn=="yes"){showTrainer();}
+ else if (sessionStorage.blSERVER=="yes"){swapPage('page2.html');}
+ else if (sessionStorage.blSERVER!="yes")
+ WebkitExploit();
+}
+
+function disableUSB() {
+  msgs.innerHTML="Prb 9.00 Exploit Menu Essentials";
+  var getpl = new XMLHttpRequest();
+  getpl.open("POST.html", "./usboff", true);
+  getpl.send(null);
+}
+
+function enableUSB() {
+  var img = document.createElement("img");
+  img.setAttribute("src","Prb/img/esp32.png");
+  document.body.appendChild(img);
+  msgs.innerHTML="Enabling USB, Please Wait ...";
+  var getpl = new XMLHttpRequest();
+  getpl.open("POST.html", "./usbon", true);
+  getpl.send(null);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+  
+}
+</script>
+</body>
+
+<!-- Mirrored from 10.1.1.1/Prb.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:16 GMT -->
+</html>

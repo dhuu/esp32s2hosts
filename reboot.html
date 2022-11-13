@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+
+<!-- Mirrored from 10.1.1.1/reboot.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESP Reboot</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function statusRbt() { var answer = confirm("Are you sure you want to reboot?");  if (answer) {document.getElementById("reboot").style.display="none";   document.getElementById("status").innerHTML = "<div id='loader'></div><br>Rebooting ESP Board"; return true;  }else {   return false;  }}
+</script>
+</head>
+<body>
+<center>
+<form action="http://10.1.1.1/reboot.html" method="post">
+<p>ESP Reboot<br><br></p>
+<p id="msgrbt">This will reboot the esp board</p><div>
+<p id="status"></p>
+<input id="reboot" type="submit" value="Reboot ESP" onClick="return statusRbt();" style="display: block;"></div>
+</form><center>
+</body>
+<!-- Mirrored from 10.1.1.1/reboot.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+</html>

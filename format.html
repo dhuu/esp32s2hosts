@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+
+<!-- Mirrored from 10.1.1.1/format.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storage Format</title>
+<link rel="stylesheet" href="style.css">
+<script>function statusFmt() { 
+var answer = confirm("Are you sure you want to format?"); 
+if (answer) {
+document.getElementById("format").style.display="none"; 
+document.getElementById("status").innerHTML = "<div id='loader'></div><br>Formatting Storage"; 
+setTimeout(function(){ window.location.href='fileman.html'; }, 8000);
+return true;
+} else {
+return false;
+}}</script>
+</head>
+<body><center>
+<form action="http://10.1.1.1/format.html" method="post">
+<p>Storage Format<br><br>
+</p><p id="msgfmt">This will delete all the files on the server</p><div><p id="status"></p>
+<input id="format" type="submit" value="Format Storage" onClick="return statusFmt();" style="display: block;"></div></form>
+<center></body>
+<!-- Mirrored from 10.1.1.1/format.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from 10.1.1.1/upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File Upload</title>
+<link rel="stylesheet" href="style.css">
+<style>body{overflow-y:auto;}
+table{height:300px; width:600px;overflow-y:scroll; overflow-x:hidden; display:block;}
+.tdf {margin-left:25%;margin-right:25%;width:500px;}
+.tds {margin-left:25%;margin-right:25%;width:200px;}
+.tdc {margin-left:25%;margin-right:25%;width:120px;}
+</style>
+<script>
+function formatBytes(bytes) {  if(bytes == 0) return '0 Bytes';  var k = 1024,  dm = 2,  sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],  i = Math.floor(Math.log(bytes) / Math.log(k));  return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];}
+function statusUpl() {  document.getElementById("upload").style.display="none";  document.getElementById("btnsel").style.display="none";  document.getElementById("status").innerHTML = "<div id='loader'></div><br>Uploading files";}
+function FileSelected(e)
+{  
+var totalsize = 0;
+var strdisp = "<table style='border:1px solid black;margin-left:auto;margin-right:auto;'>";  
+var file = document.getElementById("upfiles").files;  
+for (var i = 0; i < file.length; i++)  
+{   
+totalsize = totalsize + file[i].size;
+strdisp = strdisp + "<tr><td class'tdc'>" + ((i) + 1) + "</td><td class='tdf'>" + file[i].name + "</td><td class='tds'>" + formatBytes(file[i].size) + "</td></tr>";  
+}  
+document.getElementById("selfile").innerHTML = strdisp + "</table><br> Total Upload Size: " + formatBytes(totalsize);  
+document.getElementById("upload").style.display="block";
+}
+</script>
+</head>
+<body>
+<center>
+<form action="http://10.1.1.1/upload.html" enctype="multipart/form-data" method="post">
+<p>File Uploader<br><br></p><p>
+<input id="btnsel" type="button" onclick="document.getElementById('upfiles').click()" value="Select files" style="display: block;"><p id="selfile"></p>
+<input id="upfiles" type="file" name="fwupdate" size="0" onChange="FileSelected();" style="width:0; height:0;" multiple></p><div><p id="status"></p>
+<input id="upload" type="submit" value="Upload Files" onClick="statusUpl();" style="display: none;"></div>
+</form><center>
+</body>
+<!-- Mirrored from 10.1.1.1/upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+</html>

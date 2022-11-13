@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 10.1.1.1/update.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firmware Update</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function formatBytes(bytes) {  if(bytes == 0) return '0 Bytes';  var k = 1024,  dm = 2,  sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],  i = Math.floor(Math.log(bytes) / Math.log(k));  return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];}
+function statusUpl() {  document.getElementById("upload").style.display="none";  document.getElementById("btnsel").style.display="none";  document.getElementById("status").innerHTML = "<div id='loader'></div><br>Uploading firmware file...";  setTimeout(statusUpd, 5000);}
+function statusUpd() {  document.getElementById("status").innerHTML = "<div id='loader'></div><br>Updating firmware, Please wait.";}
+function FileSelected(e){  file = document.getElementById('fwfile').files[document.getElementById('fwfile').files.length - 1];  if (file.name.toLowerCase() == "fwupdate.bin")  {  var b = file.slice(0, 1);  var r = new FileReader();  r.onloadend = function(e) {  if (e.target.readyState === FileReader.DONE) {  var mb = new Uint8Array(e.target.result);   if (parseInt(mb[0]) == 233)  {  document.getElementById("selfile").innerHTML =  "File: " + file.name + "<br>Size: " + formatBytes(file.size) + "<br>Magic byte: 0x" + parseInt(mb[0]).toString(16).toUpperCase();   document.getElementById("upload").style.display="block"; } else  {  document.getElementById("selfile").innerHTML =  "<font color='#df3840'><b>Invalid firmware file</b></font><br><br>Magic byte is wrong<br>Expected: 0xE9<br>Found: 0x" + parseInt(mb[0]).toString(16).toUpperCase();     document.getElementById("upload").style.display="none";  }    }    };    r.readAsArrayBuffer(b);  }  else  {    document.getElementById("selfile").innerHTML =  "<font color='#df3840'><b>Invalid firmware file</b></font><br><br>File should be fwupdate.bin";    document.getElementById("upload").style.display="none";  }}
+</script>
+</head>
+<body>
+<center>
+<form action="http://10.1.1.1/update.html" enctype="multipart/form-data" method="post"><p>Firmware Updater<br><br></p><p>
+<input id="btnsel" type="button" onclick="document.getElementById('fwfile').click()" value="Select file" style="display: block;">
+<p id="selfile"></p>
+<input id="fwfile" type="file" name="fwupdate" size="0" accept=".bin" onChange="FileSelected();" style="width:0; height:0;"></p><div><p id="status"></p>
+<input id="upload" type="submit" value="Update Firmware" onClick="statusUpl();" style="display: none;"></div></form><center></body>
+<!-- Mirrored from 10.1.1.1/update.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 17:25:18 GMT -->
+</html>
