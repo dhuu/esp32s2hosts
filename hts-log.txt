@@ -1,0 +1,47 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 13 Nov 2022 13:24:23 at http://10.1.1.1/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pt_BR, en, *" http://10.1.1.1/ -O1 "D:\meusites2\esp32s2pa4host" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:25:16	Warning: 	Retry after error -4 (Connect Error) at link https://apis.google.com/js/platform.js (from 10.1.1.1/)
+13:25:18	Error: 	"Not Found" (404) at link 10.1.1.1/POST (from 10.1.1.1/Macedo.html)
+13:25:18	Error: 	"Not Found" (404) at link 10.1.1.1/GET (from 10.1.1.1/900NA.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/netcat.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/malloc.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/rop_sleirs.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/syscalls.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/syscalls2.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/mira.js (from 10.1.1.1/900Auto.html)
+13:25:20	Error: 	"Not Found" (404) at link 10.1.1.1/relocator.js (from 10.1.1.1/900Auto.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG1.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG3.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG4.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG7.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG8.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG9.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG10.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG11.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG12.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG13.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG15.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG16.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG17.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG18.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG19.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:22	Error: 	"Not Found" (404) at link 10.1.1.1/BG20.jpg (from 10.1.1.1/Hakkuraifu.html)
+13:25:30	Warning: 	Retry after error -4 (Connect Error) at link https://apis.google.com/js/platform.js (from 10.1.1.1/)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.eot?v=4.7.0 (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.eot? (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.woff2?v=4.7.0 (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.woff?v=4.7.0 (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.ttf?v=4.7.0 (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Not Found" (404) at link 10.1.1.1/fonts/fontawesome-webfont.svg?v=4.7.0 (from 10.1.1.1/Nazky/font-awesome.min.css)
+13:25:32	Error: 	"Connect Error" (-4) after 2 retries at link https://apis.google.com/js/platform.js (from 10.1.1.1/)
+13:25:33	Error: 	"Not Found" (404) at link 10.1.1.1/layStation 4/GET (from 10.1.1.1/layStation 4/loader.html)
+13:25:33	Error: 	"Not Found" (404) at link 10.1.1.1/layStation 4/POST (from 10.1.1.1/layStation 4/loader.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 10 seconds : 116 links scanned, 79 files written (5786965 bytes overall) [1947602 bytes received at 27822 bytes/sec], 5780982 bytes transferred using HTTP compression in 75 files, ratio 33%
+(34 errors, 2 warnings, 0 messages)
